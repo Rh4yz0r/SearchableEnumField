@@ -44,7 +44,7 @@ public class SearchableEnumField : Button
 
         for (int i = 0; i < _displayNames.Length; i++)
         {
-            if (_displayNames[i] == value.ToString()) continue;
+            if (_displayNames[i] != value.ToString()) continue;
 
             _currentIndex = i;
             _textElement.text = _displayNames[i];
